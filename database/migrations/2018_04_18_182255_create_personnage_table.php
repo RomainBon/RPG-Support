@@ -32,7 +32,7 @@ class CreatePersonnageTable extends Migration
         Schema::table('personnage', function (Blueprint $table)
         {
            $table->foreign('id_senar')->references('id')->on('type_jdr');
-           $table->foreign('id_user')->references('id')->on('regle');
+           $table->foreign('id_user')->references('id')->on('users');
          });
 
         DB::table('personnage')->insert

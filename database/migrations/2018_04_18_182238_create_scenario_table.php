@@ -26,7 +26,7 @@ class CreateScenarioTable extends Migration
         });
         Schema::table('scenario', function (Blueprint $table)
         {
-           $table->foreign('id_regle')->references('id')->on('regle');
+           $table->foreign('id_regle')->references('id')->on('regles');
            $table->foreign('id_Creator')->references('id')->on('users');
          });
 

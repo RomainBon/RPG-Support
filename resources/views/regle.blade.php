@@ -11,8 +11,18 @@
 
 @section('content')
 <h1>Regle :</h1>
-<form>
-<p>{{ $regle->name}}</p>
+<form action=''>
+    <label>Jeu de Rôle :</label>
+    <select name='idJdr' id='jdr'>
+        @foreach($regles as $regle)
+            <option value={{ $regle->id }} 
+                @if($regle1->id==$regle->id) 
+                    <?php echo 'selected'; ?>
+                @endif
+            > {{ $regle->name }}</option>
+        @endforeach
+    </select>
+    <input type='submit'/>
 </form>
 
 @endsection
