@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Regle;
 use App\User;
-use PDF;
 
 class RegleController extends Controller
 {
