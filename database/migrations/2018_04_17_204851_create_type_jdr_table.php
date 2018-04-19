@@ -18,6 +18,7 @@ class CreateTypeJdrTable extends Migration
             $table->string('name');
             $table->timestamps();
         });
+        
         DB::table('type_jdr')->insert
         ([
           'id'=>'1',

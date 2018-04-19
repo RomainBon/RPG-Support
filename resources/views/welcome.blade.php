@@ -85,6 +85,10 @@
                     @endauth
                 </div>
             @endif
+            
+            <div class="links">
+                    <p> <img width="200px" src="https://orig00.deviantart.net/aa2f/f/2018/108/e/0/untitled_drawing_by_aqualignia-dc96kc0.png" ></img></p>
+            </div>
 
             <div class="content">
                 <div class="title m-b-md">
@@ -93,7 +97,6 @@
 
                 <div class="links">
                   <p>Suport numérique pour les mj fatigués de la paperasse</p>
-
                 </div>
             </div>
         </div>

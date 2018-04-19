@@ -24,12 +24,13 @@ class CreateRegleTable extends Migration
             $table->integer('creator')->unsigned();
             $table->timestamps();
         });
-        Schema::table('associations', function (Blueprint $table)
+        Schema::table('regle', function (Blueprint $table)
         {
            $table->foreign('typeJdr')->references('id')->on('type_jdr');
            $table->foreign('creator')->references('id')->on('users');
          });
-         DB::table('users')->insert
+
+        DB::table('regle')->insert
          ([
            'id'=>'1',
            'name'=>'Naheulbeuk',
@@ -39,7 +40,7 @@ class CreateRegleTable extends Migration
            'historyUrl'=>'',
            'creator'=>'1'
          ]);
-         DB::table('users')->insert
+         DB::table('regle')->insert
          ([
            'id'=>'2',
            'name'=>'13 age',
